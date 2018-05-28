@@ -13,6 +13,7 @@
 
 #include <QPrintDialog>
 #include <QPrinter>
+#include <QStyle>
 #include <QTextCodec>
 
 namespace qfu = qf::core::utils;
