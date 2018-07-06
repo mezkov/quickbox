@@ -15,8 +15,8 @@ namespace utils {
  * Universal explicitly shared value
  *
  * It is a wrapper around QVariant, which makes it explicitly shared and adds some methods
- * that allows to use it as a list or map of properties.  Lists and maps can be nested
- * to create more complicated structures of properties.
+ * that allows to use it as a list or map of properties. Lists and maps can be nested
+ * to create more complex structures of properties.
  */
 class QFCORE_DECL_EXPORT SValue
 {
@@ -198,7 +198,7 @@ public:
 	 * to the key "value".
 	 *
 	 * If the @p val is not a SValue, it is converted to it. If it is list or map,
-	 * conversion is done recursively.
+	 * conversion is done recursively. Basic types are left unchanged.
 	 *
 	 * @param name Name of the key to be set
 	 * @param val New value
@@ -232,7 +232,7 @@ public:
 	 * indexes up to @p ix filled with invalid SValue.
 	 *
 	 * If the @p val is not a SValue, it is converted to it. If it is list or map,
-	 * conversion is done recursively.
+	 * conversion is done recursively. Basic types are left unchanged.
 	 *
 	 * @param ix Index of item to be set
 	 * @param val New value
